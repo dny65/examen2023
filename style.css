@@ -1,0 +1,173 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* dirección del flujo a vertical */
+    align-items: center; 
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: none;
+    transition: 0.24s ease;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 0.75em;
+}
+
+ul:hover a {
+    color: #40e0d0;
+}
+
+ul:hover a:hover {
+    color: #8eaafb;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+.encabezado{
+    background-image: url(fondo15.jpg);
+    background-size: cover;
+    color: white; 
+    padding: 40px; 
+}
+
+
+fieldset {
+    align-items: center;
+    margin: 30px auto; /* centrar el horario de atención */
+    color: white;
+    border: 1px solid brown;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.parte1 {
+    display: flex;
+    flex-direction: column; /* dirección del eje principal a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 100%; 
+    padding: 40px 20px; /* Ajusta el espacio alrededor del contenido en la parte1 */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los cards se envuelvan en una nueva línea si no caben en el ancho de la página */
+    justify-content: center; /* Centra los cards horizontalmente */
+    gap: 20px; /* Espaciado entre los cards */
+}
+
+.card {
+    flex: 0 1 30%; /* los cards tendran un ancho fijo del 30% del contenedor y no se expandan más allá */
+    max-width: 300px; /* Establece un ancho máximo para los cards */
+    border: 1px solid brown;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: ease-in-out .2s;
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+    height: auto; /* Evita que la imagen se distorsione */
+    border-radius: 50%; 
+}
+
+#card1:hover,
+#card2:hover,
+#card3:hover {
+    box-shadow: 0 5px 10px brown;
+}
+
+.destacados {
+    text-align: center;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagen {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+    border: 1px solid brown;
+    box-shadow: 0px 0px 4px 3px #C5C1C1;
+    cursor: grab;
+}
+
+.boton {
+    position: absolute;
+    bottom: 10px;
+    padding: 8px 16px;
+    background-image: url(fondo15.jpg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.boton:hover {
+    background-color: #A0522D;
+}
+
+legend{
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-image: url(fondo15.jpg);
+    background-size: cover;
+}
