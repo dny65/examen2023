@@ -1,0 +1,44 @@
+<body>
+    <link rel="stylesheet" href="styleReservas.css">
+    <section>
+        <header><h1>Reservas</h1></header> 
+        <br>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <img src="logo.jpg">
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu4.html">Menú</a></li>
+                    <li><a href="galeria_fotos.html">Galería de Fotos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <fieldset>
+            <p><i>¿Deseas visitarnos? ¡Reserva una mesa ahora!</i></p>
+            <p><i>Utiliza el siguiente formulario para hacer una reserva</i></p>
+            <br>
+            <form action="/action_page.php">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required><br>
+                <br>
+                <label for="fecha">Fecha de Reserva</label>
+                <input type="date" id="fecha" name="fecha" required><br>
+                <br>
+                <label for="hora">Hora de Reserva</label>
+                <input type="time" id="hora" name="hora" required><br>
+                <br>
+                <label for="comensales">Número de Comensales</label>
+                <input type="number" id="comensales" name="comensales" required><br>
+                <br>
+                <input type="submit" value="Reservar">
+            </form>
+        </fieldset>
+    </section>
+</body> 

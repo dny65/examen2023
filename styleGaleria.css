@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(fondo7.jpg);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 0px;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+#galeria {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    height: 50px;
+    margin: 5px;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+nav {
+    border-radius: 15px;
+    background: brown;
+    align-items: end;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: none;
+    transition: 0.24s ease;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 0 0.75em;
+}
+
+ul:hover a {
+    color: #40e0d0;
+}
+
+ul:hover a:hover {
+    color: #8eaafb;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+h2 {
+    text-align: center;
+}
+
+.imc {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.contenido {
+    display: flex;
+    height: 20rem;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contenido div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.contenido div:hover {
+    flex: 3;
+}
